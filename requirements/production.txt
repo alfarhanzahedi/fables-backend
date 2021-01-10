@@ -1,0 +1,6 @@
+# Packages required by the application in the production environment.
+
+# Packages specified in base.txt should be installed first.
+-r base.txt
+
+gunicorn==20.0.4

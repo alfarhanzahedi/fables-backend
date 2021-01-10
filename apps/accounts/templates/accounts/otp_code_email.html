@@ -1,0 +1,89 @@
+{% comment %}
+
+    This template acts as the email containing the OTP code.
+
+    ToDo: Update this template once the theme of the application (front-end) is decided.
+
+{% endcomment %}
+
+{% autoescape off %}
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Sign in to Fables</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body style="margin: 0; padding: 0;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td style="padding: 10px 0 30px 0;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+                    <tr>
+                        <td align="center" bgcolor="#ffffff" style="padding: 40px 0 30px 0;
+                                                                    font-size: 28px; font-weight: bold;
+                                                                    font-family: 'Courier New', Courier, monospace;">
+                            Fables
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#ffffff" style="padding: 40px 30px 40px 30px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding: 10px 0 10px 0;
+                                               font-family: Arial, sans-serif;
+                                               font-size: 16px;
+                                               line-height: 20px;">
+                                        Use the OTP below to sign in to your Fables account.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding: 10px 0 10px 0;
+                                                              font-family: Arial, sans-serif;
+                                                              font-size: 16px;
+                                                              line-height: 20px;">
+                                        <p style="text-decoration: none;
+                                                  display: inline-block;
+                                                  height: 38px;
+                                                  line-height: 38px;
+                                                  padding-top: 0;
+                                                  padding-right: 24px;
+                                                  padding-bottom: 0;
+                                                  padding-left: 24px;
+                                                  border: 0;
+                                                  outline: 0;
+                                                  font-size: 20px;
+                                                  font-style: normal;
+                                                  font-weight: bolder;
+                                                  text-align: center;
+                                                  white-space: nowrap;
+                                                  margin-top: 25px;
+                                                  margin-bottom: 25px;
+                                                  letter-spacing: 5px;"
+                                        >
+                                            {{ otp.code }}
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 10px 0 10px 0;
+                                               font-family: Arial, sans-serif;
+                                               font-size: 16px;
+                                               line-height: 20px;">
+                                        This OTP will expire in 15 minutes and can only be used once.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
+{% endautoescape %}

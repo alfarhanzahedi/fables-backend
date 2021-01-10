@@ -1,0 +1,4 @@
+To sign in to your Fables account, use the following OTP:
+{{ otp.code }}.
+
+This OTP will expire in 15 minutes and can only be used once.

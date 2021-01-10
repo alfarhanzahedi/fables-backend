@@ -1,0 +1,13 @@
+# Packages required by the application in both the environments - development and production.
+
+asgiref==3.2.5
+dj-database-url==0.5.0
+Django==3.0.7
+django-cors-headers==3.6.0
+djangorestframework==3.11.0
+python-decouple==3.3
+pytz==2019.3
+sqlparse==0.3.1
+whitenoise==5.0.1
+Pillow==7.1.2
+-r mlreqs.txt
